@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SportNinja Embed</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: white;
+        }
+        #main-content {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main-content"></div>
+
+<script src="https://plugin.sportninja.com/sportninja-plugin.js"></script>
+<script>
+    window.snPlugin.init();
+    window.snPlugin.renderOrganization({
+        teamId: "HIgmz5mqORBgh3ID",
+        backgroundColor: "#FFFFFF",
+        textColor: "#27303E",
+        headerBackgroundColor: "#0d094d",
+        headerTextColor: "#27303E",
+        primaryColor: "#82b7ff",
+        borderColor: "#27303E",
+        disableSuspensionsTab: false,
+        disableScheduleTab: false,
+        disableStandingsTab: false,
+        disableStatisticsTab: false,
+        disableAnnouncementsTab: false,
+        disableProvider: true,
+    });
+</script>
+
+</body>
+</html>
